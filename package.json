@@ -14,13 +14,8 @@
     "watch": "^1.0.2",
     "webpack": "^3.8.1"
   },
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "build:watch": "watch 'npm run build' ./src"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
