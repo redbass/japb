@@ -1,8 +1,18 @@
 import React from 'react';
 
 class ProgressBar extends React.Component {
+
+    constructor () {
+        super();
+        this.state = {progress: 0}
+    }
+
     render () {
-        return (<h1>JAPB</h1>);
+        const style = `width:${this.state.progress}%`;
+        return (
+            <div className="progress">
+                <div className="progress-bar" style={style}></div>
+            </div>);
     }
 }
 
