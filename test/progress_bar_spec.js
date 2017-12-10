@@ -24,7 +24,7 @@ describe('ProgressBar', () => {
         it('sets a with in percentage, equal to state.percent', ()=>{
             const expectedProgress = 33;
             progressBar.setState({progress: expectedProgress});
-            expect(progressBar.find('.progress-bar').props().style).to.have.string(`width:${expectedProgress}%`)
+            expect(progressBar.find('.progress-bar').props().style.width).to.be.equal(`${expectedProgress}%`)
         })
     });
 });
