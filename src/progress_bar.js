@@ -1,17 +1,17 @@
 import React from 'react';
+import styles from './style/progress_bar.css';
 
 class ProgressBar extends React.Component {
 
     constructor () {
         super();
-        this.state = {progress: 0}
+        this.state = {progress: 50}
     }
 
     render () {
-        const style = `width:${this.state.progress}%`;
         return (
             <div className="progress">
-                <div className="progress-bar" style={style}></div>
+                <div className="progress-bar" style={{width: this.state.progress + '%'}}></div>
             </div>);
     }
 }
