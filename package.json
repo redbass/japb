@@ -13,6 +13,7 @@
     "css-loader": "^0.28.7",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
+    "http-server": "^0.10.0",
     "ignore-styles": "^5.0.1",
     "jsdom": "^11.5.1",
     "less": "^2.7.3",
@@ -25,6 +26,7 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
+    "test-app": "npm run build; http-server -io",
     "build": "webpack",
     "build:watch": "npm run build -- --watch",
     "test": "npm run test:unit",
